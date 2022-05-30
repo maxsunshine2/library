@@ -9,6 +9,7 @@ import helmet from 'helmet';
 const __filename = fileURLToPath(
     import.meta.url);
 const __dirname = dirname(__filename);
+let test = Math.random(10);
 
 //? DEBUG=express-locallibrary-tutorial:* npm run devstart
 
