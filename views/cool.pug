@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title express
+    body 
+        - const employees = ['Angela', 'Jim', 'Nilson', 'Simone']
+        ul
+            for employee in employees
+                li= employee
+        form(action="" method="method")
+            .form-group
+                label(for='name') Name
+                input.form-control(type='name', name='name' placeholder='holder')
+            .form-group
+                label(for='email') Name
+                input.form-control(type='email', name='email' placeholder='holder')    
+                
