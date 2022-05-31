@@ -23,7 +23,9 @@ var app = express();
 //Set up mongoose connection
 import mongoose from 'mongoose';
 //var mongoDB = 'mongodb://localhost:27017/local_library';
-var mongoDB = 'mongodb://localhost:27017/local_library?appName=mongodb-vscode+0.9.3&directConnection=true&serverSelectionTimeoutMS=2000';
+//var mongoDB = 'mongodb://localhost:27017/local_library?appName=mongodb-vscode+0.9.3&directConnection=true&serverSelectionTimeoutMS=2000';
+var dev_db_url = 'mongodb+srv://maxwell:Password001@cluster0.gcq5h.mongodb.net/local_library?retryWrites=true&w=majority';
+var mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
