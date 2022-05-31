@@ -3,10 +3,10 @@ import { Router } from 'express';
 var router = Router();
 
 // Require controller modules.
-import { index, book_create_get, book_create_post, book_delete_get, book_delete_post, book_update_get, book_update_post, book_detail, book_list } from '../controllers/bookController.js';
-import { author_create_get, author_create_post, author_delete_get, author_delete_post, author_update_get, author_update_post, author_detail, author_list } from '../controllers/authorController.js';
-import { genre_create_get, genre_create_post, genre_delete_get, genre_delete_post, genre_update_get, genre_update_post, genre_detail, genre_list } from '../controllers/genreController.js';
-import { bookinstance_create_get, bookinstance_create_post, bookinstance_delete_get, bookinstance_delete_post, bookinstance_update_get, bookinstance_update_post, bookinstance_detail, bookinstance_list } from '../controllers/bookinstanceController.js';
+import { index, book_create_get, book_create_post, book_delete_get, book_delete_post, book_update_get, book_update_post, book_detail, book_list } from '../controllers/bookcontroller.js';
+import { author_create_get, author_create_post, author_delete_get, author_delete_post, author_update_get, author_update_post, author_detail, author_list } from '../controllers/authorcontroller.js';
+import { genre_create_get, genre_create_post, genre_delete_get, genre_delete_post, genre_update_get, genre_update_post, genre_detail, genre_list } from '../controllers/genrecontroller.js';
+import { bookinstance_create_get, bookinstance_create_post, bookinstance_delete_get, bookinstance_delete_post, bookinstance_update_get, bookinstance_update_post, bookinstance_detail, bookinstance_list } from '../controllers/bookinstancecontroller.js';
 
 /// BOOK ROUTES ///
 // GET catalog home page.
